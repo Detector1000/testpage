@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Transition </title>
+</head>
+<body>
+    <style>
+        body {
+        background: #fff323;
+        }
+        .spin {
+            width: 200px;
+            height: 200px;
+            position: relative;
+            animation-name: move;
+            animation-timing-function: ease-in-out;
+            animation-delay: 5s;
+            left: 350px;
+            top: 200px;
+            border-radius: 2px;
+            animation-iteration-count: 20;
+            animation-duration: 5s;
+            background: green;
+            justify-content: center;
+        }
+        @keyframes move {
+            0% {background: greenyellow; transform-origin: 25% 75%; transform: rotate(360deg);}
+            25% {background: yellowgreen; transform-origin: 25% 75%; transform: rotate(15deg);}
+            50% {background: red; transform-origin: 25% 75%; transform: rotate(90deg);}
+            75% {background: limegreen; transform-origin: 25% 75%; transform: rotate(3600deg);}
+            100% {background: magenta; transform-origin: 25% 75%; transform: rotate(360deg);}
+        }
+    </style>
+    
+	<div class="spin"></div>
+	<div>
+		<p>I am Equinox and my friend Ade has a big dick</p>
+	</div>
+	
+</body>
+</html>
